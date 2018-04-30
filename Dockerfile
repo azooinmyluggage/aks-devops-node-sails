@@ -1,4 +1,6 @@
-FROM node:6.9.3
+FROM node:8-onbuild
+
+# FROM node:6.9.3
 MAINTAINER Azure App Services Container Images <appsvc-images@microsoft.com>
 
 # Create app directory
@@ -12,5 +14,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080 8080
+EXPOSE 1337 1337
 CMD [ "npm", "start" ]

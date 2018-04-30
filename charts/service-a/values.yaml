@@ -4,7 +4,7 @@
 fullnameOverride: service-a
 replicaCount: 1
 image:
-  repository: aksdevopsa204.azurecr.io/aks-node-express
+  repository: aksdevopsa204.azurecr.io/aks-node-sails
   tag: stable
 imagePullSecrets: []
   # Optionally specify an array of imagePullSecrets.
@@ -15,7 +15,7 @@ imagePullSecrets: []
   # - name: myRegistryKeySecretName
 service:
   type: LoadBalancer
-  port: 8080
+  port: 1337
 
 ingress:
   enabled: true
